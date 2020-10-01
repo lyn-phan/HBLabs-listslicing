@@ -2,81 +2,28 @@
 
 
 def head(input_list):
-    """Return the first item of the input list.
-
-    For example:
-
-      >>> head(['Jan', 'Feb', 'Mar'])
-      'Jan'
-    """
-
-    return None
-
+    """return the first item in the list"""
+    return input_list[0]
 
 def tail(input_list):
-    """Return a new list of all items, excluding the first item.
-
-    For example:
-
-    >>> tail(['Jan', 'Feb', 'Mar'])
-    ['Feb', 'Mar']
-
-    """
-
-    return []
-
+    """return a new list of all items, excluding the first item"""
+    return input_list[1:]
 
 def last(input_list):
-    """Return the last item of the input list.
-
-    For example:
-
-    >>> last(['Jan', 'Feb', 'Mar'])
-    'Mar'
-
-    """
-
-    return []
-
+    """return the last item of the input list."""
+    return input_list[-1]
 
 def top(input_list):
-    """Return all elements of the input list except the last.
-
-    For example:
-
-    >>> top(['Jan', 'Feb', 'Mar'])
-    ['Jan', 'Feb']
-
-    """
-
-    return []
-
+    """Return all elements except the last"""
+    return input_list[:-1]
 
 def first_three(input_list):
-    """Return the first three elements of the input list.
-
-    For example:
-
-    >>> first_three(['Jan', 'Feb', 'Mar', 'Apr', 'May'])
-    ['Jan', 'Feb', 'Mar']
-
-    """
-
-    return []
-
+    """Return the first three elements of the input list."""
+    return input_list[0:3]
 
 def last_five(input_list):
-    """Return the last five elements of the input list.
-
-    For example:
-
-    >>> last_five([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
-    [15, 18, 21, 24, 27]
-
-    """
-
-    return []
-
+    """Return the last five elements of the input list."""
+    return input_list[-5:]
 
 def middle(input_list):
     """Return all elements of input_list except the first two and the last two.
@@ -84,11 +31,9 @@ def middle(input_list):
     For example:
 
     >>> middle([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
-    [6, 9, 12, 15, 18, 21]
+    [6, 9, 12, 15, 18, 21]"""
 
-    """
-
-    return []
+    return input_list[2:-2]
 
 
 def inner_four(input_list):
@@ -101,7 +46,7 @@ def inner_four(input_list):
 
     """
 
-    return []
+    return input_list[2:6]
 
 
 def inner_four_end(input_list):
@@ -116,8 +61,7 @@ def inner_four_end(input_list):
     [12, 15, 18, 21]
 
     """
-
-    return []
+    return input_list[-6:-2]
 
 
 def replace_head(input_list):
@@ -132,8 +76,7 @@ def replace_head(input_list):
 
     """
 
-    pass
-
+    input_list[0] = 42
 
 def replace_third_and_last(input_list):
     """Replace third and last elements of input_list with 37 and return nothing.
@@ -147,7 +90,7 @@ def replace_third_and_last(input_list):
 
     """
 
-    pass
+    input_list[2], input_list[-1] = 37, 37
 
 
 def replace_middle(input_list):
@@ -166,7 +109,9 @@ def replace_middle(input_list):
 
     """
 
-    pass
+    input_list[2:-2] = 42, 37
+
+    
 
 
 def delete_third_and_seventh(input_list):
